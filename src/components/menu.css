@@ -24,7 +24,7 @@ header .info .logo {
 
 header .info .logo img {
   width: 100%;
-  min-width: 120px;
+  min-width: 100px;
 }
 
 header .phone {
@@ -36,15 +36,26 @@ header .phone {
   font-weight: 700;
 }
 
+header .phone img {
+  width: 20%;
+}
+
 header .menu {
   display: flex;
   align-items: center;
   padding: 10px 0px;
   border: 1px solid #ebebeb;
   width: 20%;
-  min-width: 10%;
+  min-width: 16%;
   position: relative;
   justify-content: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+header .menu:hover {
+  transition: 1s;
+  background: rgba(62, 184, 113, .2);
 }
 
 
@@ -53,6 +64,7 @@ header .menu .user {
   flex-direction: column;
   font-size: .6em;
   padding: 0px 20px;
+  align-items: center;
 }
 
 header .menu .caret {
@@ -73,4 +85,53 @@ header .menu nav {
 
 header .menu nav div {
   display: flex;
+}
+
+@media screen and (max-width: 620px) {
+  header .info .phone {
+    padding-left: 5%;
+    justify-content: space-evenly;
+    font-size: .8em;
+  }
+
+  header .info .logo {
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  header .info {
+    justify-content: flex-start;
+  }
+
+  header .info .phone {
+    padding-left: 2%;
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: .8em;
+  }
+
+  header .info .logo {
+    padding-right: 2%;
+    width: 40%;
+  }
+
+  header .menu .user {
+    padding: 0px 0px;
+  }
+
+  header .menu .user img{
+    width: 30px;
+  }
+
+  header .menu .caret{
+    right: 2px;
+
+  }
+
+  header .info .logo img {
+    width: 100%;
+    min-width: 85px;
+  }
 }

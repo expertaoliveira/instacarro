@@ -27,3 +27,9 @@ body {
   margin: 0 auto;
   display: flex;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}

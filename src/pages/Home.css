@@ -8,3 +8,9 @@ main {
   justify-content: space-between;
 
 }
+
+@media screen and (max-width: 1024px) {
+  .auctions-list {
+    justify-content: space-around;
+  }
+}
