@@ -1,0 +1,76 @@
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+
+header .container {
+  justify-content: space-between;
+}
+
+header .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+header .info .logo {
+  padding-right: 10%;
+  border-right: 2px solid #ccc;
+}
+
+header .info .logo img {
+  width: 100%;
+  min-width: 120px;
+}
+
+header .phone {
+  display: flex;
+  padding-left: 10%;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 50%;
+  font-weight: 700;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  border: 1px solid #ebebeb;
+  width: 20%;
+  min-width: 10%;
+  position: relative;
+  justify-content: center;
+}
+
+
+header .menu .user {
+  display: flex;
+  flex-direction: column;
+  font-size: .6em;
+  padding: 0px 20px;
+}
+
+header .menu .caret {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+header .menu span {
+  font-size: 1em;
+}
+
+header .menu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu nav div {
+  display: flex;
+}

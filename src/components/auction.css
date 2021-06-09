@@ -1,0 +1,133 @@
+.card-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border:1px solid #bebebe;
+  width: 30%;
+  min-width: 300px;
+  color: #323232;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.card-item .card-img {
+  height: 240px;
+  overflow: hidden;
+}
+
+.card-item .card-img img {
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+}
+
+.card-item .card-img img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.card-item .card-img .more-details {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.card-item .details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item .details .time {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 2px solid #e4e4e4
+}
+
+.card-item .details .time small{
+  font-size: .6em;
+}
+
+.card-item .details .time .time-left,
+.card-item .details .time .last-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.card-item .details .time .last-offer .offer {
+  color: #3eb871;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+}
+
+.card-item .details .time .time-left .remaining-time {
+  color: #ff6d4a;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  border-right: 2px solid #e4e4e4;
+}
+
+.line {
+  border-right: 2px solid #e4e4e4;
+  width: 1px;
+  height: 35px;
+}
+
+.card-item .details .description {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0px;
+  height: 75px;
+  border-bottom: 2px solid #e4e4e4
+}
+
+.card-item .since {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.card-item .since .year {
+  width: 50%;
+  text-align: center;
+  border-right: 2px solid #e4e4e4;
+}
+
+.card-item .since .km {
+  width: 50%;
+  text-align: center;
+}
+
+
+.card-item .details .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+
+.card-item .details .action button {
+  background-color: #3eb871;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-item .details .action button:hover {
+  background-color: rgba(62, 184, 113, .8);
+  cursor: pointer;
+}
